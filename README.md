@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚔ LLM-Eval-Arabic
 
 **The definitive open-source Arabic LLM evaluation platform.**
@@ -74,3 +75,6 @@ wscat -c ws://localhost:8000/ws/evaluate
 ## License
 
 MIT
+=======
+# llm-eval-arabic
+>>>>>>> 590ab8070022bb10139df2e564fea6ba9999caf1
