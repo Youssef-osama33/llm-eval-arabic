@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cinzel:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold:   #d4a843;
+  --crimson:#8b1a1a;
+  --bg:     #050508;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Courier Prime', monospace;
+  background: var(--bg);
+  color: white;
+}
+
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track  { background: rgba(255,255,255,0.02); }
+::-webkit-scrollbar-thumb  { background: rgba(212,168,67,0.4); border-radius: 2px; }
+
+/* Custom animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Tailwind animation utility */
+.animate-fadeUp { animation: fadeUp 0.4s ease both; }
